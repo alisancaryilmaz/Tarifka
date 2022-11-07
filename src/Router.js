@@ -16,8 +16,22 @@ const Router = () => {
           component={MainPage}
           options={{headerTitleStyle: {color: '#ffa500'}}}
         />
-        <Stack.Screen name="Meals" component={FoodsPage} />
-        <Stack.Screen name="Detail" component={DetailPage} />
+        <Stack.Screen
+          name="Meals"
+          component={FoodsPage}
+          options={
+            ({headerTitleStyle: {color: '#ffa500'}},
+            {headerTintColor: '#ffa500'})
+          }
+        />
+        <Stack.Screen
+          name="Detail"
+          component={DetailPage}
+          options={
+            ({headerTitleStyle: {color: '#ffa500'}},
+            {headerTintColor: '#ffa500'})
+          }
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

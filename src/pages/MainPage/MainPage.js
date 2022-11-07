@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {FlatList, StyleSheet, View, Text} from 'react-native';
-import axios from 'axios';
+import React from 'react';
+import {FlatList} from 'react-native';
 import CategoryCard from './../../components/CategoryCard';
 import Config from 'react-native-config';
 import Loading from '../../components/Loading/Loading';
